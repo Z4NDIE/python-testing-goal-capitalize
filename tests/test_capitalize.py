@@ -8,10 +8,10 @@
 
 from capitalize import capitalize
 
-if capitalize('hello') != 'hello':
+assert capitalize('hello') == 'hello':
     raise Exception('Функция работает неверно!')
 
-if capitalize('') != '':
+assert capitalize('') == '':
     raise Exception('Функция работает неверно!')
 
 print('Все тесты пройдены!')
